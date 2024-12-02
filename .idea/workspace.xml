@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb7d8a7f-402a-4df8-830e-f434c22384d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/DataBases.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/dml.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/contracts_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/excommunicado.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/executers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/hotels_affilations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/services/connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create_delete_contract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create_excom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/excom_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/look_contracts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/look_executers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/manage_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shush_excommunicado.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SQL File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2pRLZdkuwQl9vZSJi6JGLBA1F51" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pw_gen.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/VUZProjects/DataBases&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\VUZProjects\DataBases" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\VUZProjects\DataBases\src\directories\services" />
+      <recent name="C:\VUZProjects\DataBases" />
+      <recent name="C:\VUZProjects\DataBases\app" />
+      <recent name="C:\VUZProjects\DataBases\migrations" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb7d8a7f-402a-4df8-830e-f434c22384d9" name="Changes" comment="" />
+      <created>1732723999160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732723999160</updated>
+      <workItem from="1732724000347" duration="101000" />
+      <workItem from="1732724116601" duration="85000" />
+      <workItem from="1732724209301" duration="106000" />
+      <workItem from="1732877480068" duration="16259000" />
+      <workItem from="1732987235226" duration="4109000" />
+      <workItem from="1732995044766" duration="11000" />
+      <workItem from="1732995063372" duration="2042000" />
+      <workItem from="1733058846938" duration="12369000" />
+      <workItem from="1733072257817" duration="8480000" />
+      <workItem from="1733085631346" duration="8756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DataBases$main.coverage" NAME="main Coverage Results" MODIFIED="1733084256258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/DataBases$pw_gen.coverage" NAME="pw_gen Coverage Results" MODIFIED="1732888227953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

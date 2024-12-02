@@ -89,8 +89,14 @@ def get_users(hotel_id = None):
                 return cur.fetchall()
     else:
         query = """
-        SELECT user_id, name, age, status, role, hotel_id, affilation_id
+        SELECT user_id, users.name, age, status, role, hotels.place, affilations.name
         FROM users
+             LEFT JOIN
+             hotels
+             ON users.hotel_id = hotels.hotel_id
+             LEFT JOIN
+             affilations
+             ON users.affilation_id = affilations.affilation_id
         ORDER BY user_id
         """
         with psycopg2.connect(**DB_CONFIG) as conn:

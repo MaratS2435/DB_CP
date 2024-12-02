@@ -1,17 +1,18 @@
 import psycopg2
+import psycopg2.extras
 import streamlit as st
 from ..settings import DB_CONFIG
 
 def get_contracts_table(my = False):
     if my:
         query = """
-        SELECT contract_id, task, reward
+        SELECT contract_id, task
         FROM contracts
         WHERE client_id = %(user_id)s
         ORDER BY contract_id
         """
         with psycopg2.connect(**DB_CONFIG) as conn:
-            with conn.cursor() as cur:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
                 cur.execute(query, {"user_id": st.session_state.user_id})
                 return cur.fetchall()
     else:
@@ -21,7 +22,7 @@ def get_contracts_table(my = False):
              LEFT JOIN
              users
              ON contracts.client_id = users.user_id
-        WHERE task_id != %(user_id)s
+        WHERE task_id != %(user_id)s OR task_id IS NULL
         ORDER BY contract_id
         """
         with psycopg2.connect(**DB_CONFIG) as conn:
@@ -57,11 +58,12 @@ def put_contract(task, reward, task_name = None):
 
 def delete_contract(contract_id):
     query_1 = """
-    DELETE FROM contracts
-    WHERE contract_id = %(contract_id)s
-    """
+        DELETE FROM contracts_executers
+        WHERE contract_id = %(contract_id)s
+        """
+
     query_2 = """
-    DELETE FROM contracts_executers
+    DELETE FROM contracts
     WHERE contract_id = %(contract_id)s
     """
     with psycopg2.connect(**DB_CONFIG) as conn:

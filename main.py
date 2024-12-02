@@ -32,10 +32,12 @@ def main():
             st.sidebar.title("Что вы хотите сделать?")
             page = st.sidebar.radio(
                 "Choose an option",
-                ["Manage contracts", "Available contracts", "Excommunicados"],
+                ["Manage contracts", "Contract executors", "Available contracts", "Excommunicados"],
             )
             if page == "Manage contracts":
                 show_manage_contracts_page()
+            elif page == "Contract executors":
+                show_executers_page()
             elif page == "Available contracts":
                 show_look_contracts_page()
             elif page == "Excommunicados":
@@ -44,10 +46,12 @@ def main():
             st.sidebar.title("Что вы хотите сделать?")
             page = st.sidebar.radio(
                 "Choose an option",
-                ["Manage contracts", "Excommunicados"],
+                ["Manage contracts", "Contract executors", "Excommunicados"],
             )
             if page == "Manage contracts":
                 show_manage_contracts_page()
+            elif page == "Contract executors":
+                show_executers_page()
             elif page == "Excommunicados":
                 show_excom_table()
 

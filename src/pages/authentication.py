@@ -17,7 +17,7 @@ def show_login_page():
         elif auth.check_excommunicado(user["user_id"]):
             if "excom" not in st.session_state:
                 st.session_state.excom = True
-            show_shush_excom_page()
+            show_shush_excom_page(user["user_id"])
         else:
             if 'user_id' not in st.session_state:
                 st.session_state.user_id = user["user_id"]

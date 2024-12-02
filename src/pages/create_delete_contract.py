@@ -18,7 +18,7 @@ def show_manage_contracts_page():
             else:
                 try:
                     contracts_table.put_contract(description, reward, task_name)
-                    st.write("Contract created successfully!")
+                    st.success("Contract created successfully!")
                 except Exception as e:
                     st.error(f"An error occurred: {e}")
 

@@ -4,35 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb7d8a7f-402a-4df8-830e-f434c22384d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DataBases.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/ddl.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/dml.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/contracts_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/excommunicado.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/executers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/hotels_affilations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/services/connector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/directories/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/create_delete_contract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/create_excom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/excom_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/look_contracts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/look_executers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/manage_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shush_excommunicado.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/settings.py" afterDir="false" />
+    <list default="true" id="cb7d8a7f-402a-4df8-830e-f434c22384d9" name="Changes" comment="ver 1.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directories/contracts_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/directories/contracts_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directories/excommunicado.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/directories/excommunicado.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directories/executers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/directories/executers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directories/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/directories/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/create_delete_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/create_delete_contract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/create_excom.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/create_excom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/excom_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/excom_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/look_contracts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/look_contracts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/manage_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/manage_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shush_excommunicado.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shush_excommunicado.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MaratS2435&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MaratS2435/DB_CP.git&quot;,
+    &quot;accountId&quot;: &quot;6105675b-ffe2-4be7-a5cf-b3e7acede154&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -119,11 +116,25 @@
       <workItem from="1733058846938" duration="12369000" />
       <workItem from="1733072257817" duration="8480000" />
       <workItem from="1733085631346" duration="8756000" />
+      <workItem from="1733135790891" duration="8864000" />
     </task>
+    <task id="LOCAL-00001" summary="ver 1.0">
+      <option name="closed" value="true" />
+      <created>1733136300652</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733136300652</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ver 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

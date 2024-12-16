@@ -1,5 +1,5 @@
-from ..directories import executers
-from ..directories import contracts_table
+from ..repositories import executers
+from ..repositories import contracts_table
 import streamlit as st
 
 def show_executers_page():

@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 from pandas.core.interchange.dataframe_protocol import DataFrame
 
-from ..directories import users
-from ..directories import hotels_affilations
+from ..repositories import users
+from ..repositories import hotels_affilations
 
 @st.cache_data
 def show_hotels():
@@ -41,7 +41,7 @@ def show_manage_users_page():
                 st.warning("Please fill name, password, age, status and hotel")
             else:
                 try:
-                    new_id = users.put_user(name, password, age, status, role, hotel_id, affilation_id)
+                    new_id = users.put_user(name, password, age, status, role, hotels[hotel_id], affilations[affilation_id])
                     st.success("User registered successfully!")
                     st.write(f"User ID: {new_id}  Password: {password}")
                     st.write("Be sure to give the user their data!")

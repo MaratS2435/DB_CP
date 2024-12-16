@@ -1,5 +1,5 @@
 import streamlit as st
-from ..directories import contracts_table
+from ..repositories import contracts_table
 
 
 def show_manage_contracts_page():

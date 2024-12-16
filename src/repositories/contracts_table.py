@@ -33,27 +33,26 @@ def get_contracts_table(my = False):
 def put_contract(task, reward, task_name = None):
     task_id = None
     if task_name is not None:
-        query = """
+        query1 = """
         SELECT user_id
         FROM users
         WHERE name = %(task_name)s 
         """
-        with psycopg2.connect(**DB_CONFIG) as conn:
-            with conn.cursor() as cur:
-                cur.execute(query, {"task_name": task_name})
-                result = cur.fetchone()
-                if result is None:
-                    task_id = None
-                else:
-                    task_id = result[0]
 
-    query = """
+    query2 = """
     INSERT INTO contracts (task, task_id, reward, client_id)
     VALUES (%(task)s, %(task_id)s, %(reward)s, %(user_id)s)
     """
     with psycopg2.connect(**DB_CONFIG) as conn:
         with conn.cursor() as cur:
-            cur.execute(query, {"task": task, "task_id": task_id, "reward": reward, "user_id": st.session_state.user_id})
+            if task_name is not None:
+                cur.execute(query1, {"task_name": task_name})
+                result = cur.fetchone()
+                if result is None:
+                    task_id = None
+                else:
+                    task_id = result[0]
+            cur.execute(query2, {"task": task, "task_id": task_id, "reward": reward, "user_id": st.session_state.user_id})
             conn.commit()
 
 def delete_contract(contract_id):
@@ -78,13 +77,6 @@ def make_executer(contract_id, executer_id):
     FROM contracts
     WHERE contract_id = %(contract_id)s
     """
-    with psycopg2.connect(**DB_CONFIG) as conn:
-        with conn.cursor() as cur:
-            cur.execute(query_check_1, {"contract_id": contract_id})
-            result = cur.fetchone()
-            if result is None:
-                st.warning("Contract not found")
-                return
 
     query_check_2 = """
     SELECT contract_id, executer_id
@@ -92,13 +84,6 @@ def make_executer(contract_id, executer_id):
     WHERE contract_id = %(contract_id)s
           AND executer_id = %(executer_id)s
     """
-    with psycopg2.connect(**DB_CONFIG) as conn:
-        with conn.cursor() as cur:
-            cur.execute(query_check_2, {"contract_id": contract_id, "executer_id": executer_id})
-            result = cur.fetchone()
-            if result is not None:
-                st.warning("Contract already has this executer")
-                return
 
     query = """
     INSERT INTO contracts_executers (contract_id, executer_id)
@@ -106,6 +91,16 @@ def make_executer(contract_id, executer_id):
     """
     with psycopg2.connect(**DB_CONFIG) as conn:
         with conn.cursor() as cur:
+            cur.execute(query_check_1, {"contract_id": contract_id})
+            result = cur.fetchone()
+            if result is None:
+                return 1
+
+            cur.execute(query_check_2, {"contract_id": contract_id, "executer_id": executer_id})
+            result = cur.fetchone()
+            if result is not None:
+                return 2
+
             cur.execute(query, {"contract_id": contract_id, "executer_id": st.session_state.user_id})
             conn.commit()
 

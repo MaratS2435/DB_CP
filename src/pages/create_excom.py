@@ -1,4 +1,4 @@
-from ..directories import excommunicado
+from ..repositories import excommunicado
 import streamlit as st
 
 @st.cache_data

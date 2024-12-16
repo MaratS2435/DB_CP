@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from ..directories import excommunicado
+from ..repositories import excommunicado
 
 def show_excom_table():
     st.title("Excommunicados")

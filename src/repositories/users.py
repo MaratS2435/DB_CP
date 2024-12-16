@@ -4,7 +4,7 @@ import streamlit as st
 from ..settings import DB_CONFIG
 
 def put_user(name, password, age, status, role, hotel_id, affilation_id):
-    hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
     query = """
     INSERT INTO users (name, password, age, status, role, hotel_id, affilation_id)
     VALUES (%s, %s, %s, %s, %s, %s, %s)

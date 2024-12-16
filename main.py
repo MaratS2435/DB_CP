@@ -1,5 +1,5 @@
 import streamlit as st
-from src.directories import auth
+from src.repositories import auth
 from src.pages.authentication import show_login_page
 from src.pages.create_delete_contract import show_manage_contracts_page
 from src.pages.look_contracts import show_look_contracts_page
@@ -21,12 +21,14 @@ def main():
             st.sidebar.title("What do you want to do?")
             page = st.sidebar.radio(
                 "Choose an option",
-                ["Manage users", "Manage excommunicados"],
+                ["Manage users", "Manage excommunicados", "Excommunicados"],
             )
             if page == "Manage users":
                 show_manage_users_page()
             elif page == "Manage excommunicados":
                 show_create_excom_page()
+            elif page == "Excommunicados":
+                show_excom_table()
 
         elif st.session_state.role == "killer":
             st.sidebar.title("Что вы хотите сделать?")

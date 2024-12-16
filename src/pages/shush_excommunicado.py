@@ -1,7 +1,7 @@
 import streamlit as st
 from pandas import to_datetime
 
-from ..directories import excommunicado
+from ..repositories import excommunicado
 
 
 def show_shush_excom_page(user_id):

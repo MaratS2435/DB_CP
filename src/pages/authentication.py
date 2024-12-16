@@ -1,7 +1,7 @@
 import streamlit as st
 
 from .shush_excommunicado import show_shush_excom_page
-from ..directories import auth
+from ..repositories import auth
 
 
 def show_login_page():
